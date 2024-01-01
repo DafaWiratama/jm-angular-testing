@@ -21,7 +21,6 @@ pipeline {
 
                         /kaniko/executor \
                         --cleanup \
-                        --target=runner \
                         --compressed-caching=false \
                         --log-format=text \
                         --reproducible \
