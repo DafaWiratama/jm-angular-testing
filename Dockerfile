@@ -4,6 +4,6 @@ COPY ./ /app/
 RUN npm install
 RUN npm run build
 
-FROM nginx:latest
-COPY --from=build /app/dist/jm-angular-testing /usr/share/nginx/html
+FROM nginx:stable-alpine
+COPY --from=build /app/dist/jm-angular-testing/browser /usr/share/nginx/html
 EXPOSE 80
