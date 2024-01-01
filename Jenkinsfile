@@ -10,7 +10,7 @@ pipeline {
 
         stage("Checkout from SCM"){
             steps {
-                git url: 'https://github.com/DafaWiratama/jm-angular-testing', branch: 'main'
+                git url: 'https://github.com/DafaWiratama/jm-angular-testing', branch: 'master'
             }
         }
 
