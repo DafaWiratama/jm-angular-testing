@@ -22,7 +22,7 @@ pipeline {
                         /kaniko/executor \
                         --reproducible \
                         --ignore-path="/busybox" \
-                        --caching \
+                        --cache=true \
                         --log-format=text \
                         --context `pwd` \
                         --dockerfile `pwd`/Dockerfile \
